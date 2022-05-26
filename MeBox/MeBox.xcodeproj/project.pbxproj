@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63277E642839FC9E0073B9FB /* UIControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63277E632839FC9E0073B9FB /* UIControl+TestHelpers.swift */; };
+		634A15D9283E316B00C6D543 /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A15D8283E316B00C6D543 /* UIView+Shimmering.swift */; };
+		634A15FE283F5EB400C6D543 /* MyFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A15FD283F5EB400C6D543 /* MyFeedUITests.swift */; };
+		634A1601283F5EF100C6D543 /* MyFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1600283F5EF100C6D543 /* MyFeedLoader.swift */; };
+		634A1604283F6AE600C6D543 /* MyImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1603283F6AE600C6D543 /* MyImageDataLoader.swift */; };
+		634A1606283F762E00C6D543 /* MyFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1605283F762E00C6D543 /* MyFeedViewController.swift */; };
+		634A1608283F76A300C6D543 /* MyFeedItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1607283F76A300C6D543 /* MyFeedItemCell.swift */; };
+		634A160C283F85DB00C6D543 /* MyFeedStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A160B283F85DB00C6D543 /* MyFeedStubs.swift */; };
+		634A160E283F85F500C6D543 /* MyFeedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A160D283F85F500C6D543 /* MyFeedTestHelpers.swift */; };
+		634A160F283F861F00C6D543 /* MyFeedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A160D283F85F500C6D543 /* MyFeedTestHelpers.swift */; };
+		634A1611283FAAFF00C6D543 /* UIImage+make.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1610283FAAFF00C6D543 /* UIImage+make.swift */; };
+		634A1612283FAB2500C6D543 /* UIImage+make.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1610283FAAFF00C6D543 /* UIImage+make.swift */; };
+		634A1614283FAB7D00C6D543 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1613283FAB7D00C6D543 /* XCTestCase+MemoryLeakTracking.swift */; };
+		63730951282173F100FA2D22 /* UICollectionView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63730950282173F100FA2D22 /* UICollectionView+Dequeueing.swift */; };
+		639E984728169C7F00907738 /* MeBoxiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639E983F28169C7F00907738 /* MeBoxiOS.framework */; };
+		639E984D28169C7F00907738 /* MeBoxiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 639E984128169C7F00907738 /* MeBoxiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		639E98792816AA5000907738 /* UIView+ImageNamed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E98692816AA5000907738 /* UIView+ImageNamed.swift */; };
+		639E987A2816AA5000907738 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E986A2816AA5000907738 /* UIColor+Extension.swift */; };
+		639E987B2816AA5000907738 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E986B2816AA5000907738 /* UITableView+Dequeueing.swift */; };
+		639E987C2816AA5000907738 /* String+TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E986C2816AA5000907738 /* String+TextSize.swift */; };
+		639E989228178B4500907738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E989128178B4500907738 /* AppDelegate.swift */; };
+		639E989628178B4500907738 /* RouterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E989528178B4500907738 /* RouterViewController.swift */; };
+		639E989B28178B4700907738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639E989A28178B4700907738 /* Assets.xcassets */; };
+		639E989E28178B4700907738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639E989C28178B4700907738 /* LaunchScreen.storyboard */; };
+		639E98A728178D7100907738 /* MeBoxiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639E983F28169C7F00907738 /* MeBoxiOS.framework */; };
+		639E98A828178D7100907738 /* MeBoxiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639E983F28169C7F00907738 /* MeBoxiOS.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63B051B9283A09F0000BACC3 /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B051B8283A09EF000BACC3 /* UIRefreshControl+TestHelpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		639E984828169C7F00907738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 639E97EB28166C7300907738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 639E983E28169C7F00907738;
+			remoteInfo = MeBoxiOS;
+		};
+		639E98A928178D7100907738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 639E97EB28166C7300907738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 639E983E28169C7F00907738;
+			remoteInfo = MeBoxiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		639E985B28169FD400907738 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639E98AB28178D7100907738 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				639E98A828178D7100907738 /* MeBoxiOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		63277E632839FC9E0073B9FB /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
+		634A15D8283E316B00C6D543 /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
+		634A15FD283F5EB400C6D543 /* MyFeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedUITests.swift; sourceTree = "<group>"; };
+		634A1600283F5EF100C6D543 /* MyFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedLoader.swift; sourceTree = "<group>"; };
+		634A1603283F6AE600C6D543 /* MyImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageDataLoader.swift; sourceTree = "<group>"; };
+		634A1605283F762E00C6D543 /* MyFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedViewController.swift; sourceTree = "<group>"; };
+		634A1607283F76A300C6D543 /* MyFeedItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedItemCell.swift; sourceTree = "<group>"; };
+		634A160B283F85DB00C6D543 /* MyFeedStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedStubs.swift; sourceTree = "<group>"; };
+		634A160D283F85F500C6D543 /* MyFeedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedTestHelpers.swift; sourceTree = "<group>"; };
+		634A1610283FAAFF00C6D543 /* UIImage+make.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+make.swift"; sourceTree = "<group>"; };
+		634A1613283FAB7D00C6D543 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		63730950282173F100FA2D22 /* UICollectionView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeueing.swift"; sourceTree = "<group>"; };
+		639E983F28169C7F00907738 /* MeBoxiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeBoxiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		639E984128169C7F00907738 /* MeBoxiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeBoxiOS.h; sourceTree = "<group>"; };
+		639E984628169C7F00907738 /* MeBoxiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeBoxiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		639E98692816AA5000907738 /* UIView+ImageNamed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ImageNamed.swift"; sourceTree = "<group>"; };
+		639E986A2816AA5000907738 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		639E986B2816AA5000907738 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
+		639E986C2816AA5000907738 /* String+TextSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TextSize.swift"; sourceTree = "<group>"; };
+		639E988F28178B4500907738 /* MeBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		639E989128178B4500907738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		639E989528178B4500907738 /* RouterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewController.swift; sourceTree = "<group>"; };
+		639E989A28178B4700907738 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		639E989D28178B4700907738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		639E989F28178B4700907738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B051B8283A09EF000BACC3 /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		639E983C28169C7F00907738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639E984328169C7F00907738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639E984728169C7F00907738 /* MeBoxiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639E988C28178B4500907738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639E98A728178D7100907738 /* MeBoxiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		634A15FC283F5EA200C6D543 /* MyFeed */ = {
+			isa = PBXGroup;
+			children = (
+				634A15FD283F5EB400C6D543 /* MyFeedUITests.swift */,
+				634A160D283F85F500C6D543 /* MyFeedTestHelpers.swift */,
+			);
+			path = MyFeed;
+			sourceTree = "<group>";
+		};
+		634A15FF283F5EDF00C6D543 /* MyFeed */ = {
+			isa = PBXGroup;
+			children = (
+				634A1600283F5EF100C6D543 /* MyFeedLoader.swift */,
+				634A1603283F6AE600C6D543 /* MyImageDataLoader.swift */,
+				634A1605283F762E00C6D543 /* MyFeedViewController.swift */,
+				634A1607283F76A300C6D543 /* MyFeedItemCell.swift */,
+			);
+			path = MyFeed;
+			sourceTree = "<group>";
+		};
+		634A160A283F85D200C6D543 /* MyFeed */ = {
+			isa = PBXGroup;
+			children = (
+				634A160B283F85DB00C6D543 /* MyFeedStubs.swift */,
+			);
+			path = MyFeed;
+			sourceTree = "<group>";
+		};
+		639E97EA28166C7300907738 = {
+			isa = PBXGroup;
+			children = (
+				639E984028169C7F00907738 /* MeBoxiOS */,
+				639E984A28169C7F00907738 /* MeBoxiOSTests */,
+				639E989028178B4500907738 /* MeBoxApp */,
+				639E97F528166C7300907738 /* Products */,
+				639E985628169FD400907738 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		639E97F528166C7300907738 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				639E983F28169C7F00907738 /* MeBoxiOS.framework */,
+				639E984628169C7F00907738 /* MeBoxiOSTests.xctest */,
+				639E988F28178B4500907738 /* MeBoxApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		639E984028169C7F00907738 /* MeBoxiOS */ = {
+			isa = PBXGroup;
+			children = (
+				634A15FF283F5EDF00C6D543 /* MyFeed */,
+				639E98BB2818E64000907738 /* UI Helpers */,
+				639E984128169C7F00907738 /* MeBoxiOS.h */,
+			);
+			path = MeBoxiOS;
+			sourceTree = "<group>";
+		};
+		639E984A28169C7F00907738 /* MeBoxiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				634A15FC283F5EA200C6D543 /* MyFeed */,
+				63B051B7283A09D2000BACC3 /* Helpers */,
+			);
+			path = MeBoxiOSTests;
+			sourceTree = "<group>";
+		};
+		639E985628169FD400907738 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		639E989028178B4500907738 /* MeBoxApp */ = {
+			isa = PBXGroup;
+			children = (
+				634A160A283F85D200C6D543 /* MyFeed */,
+				639E989128178B4500907738 /* AppDelegate.swift */,
+				639E989528178B4500907738 /* RouterViewController.swift */,
+				639E989A28178B4700907738 /* Assets.xcassets */,
+				639E989C28178B4700907738 /* LaunchScreen.storyboard */,
+				639E989F28178B4700907738 /* Info.plist */,
+			);
+			path = MeBoxApp;
+			sourceTree = "<group>";
+		};
+		639E98BB2818E64000907738 /* UI Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				639E98692816AA5000907738 /* UIView+ImageNamed.swift */,
+				639E986A2816AA5000907738 /* UIColor+Extension.swift */,
+				639E986B2816AA5000907738 /* UITableView+Dequeueing.swift */,
+				63730950282173F100FA2D22 /* UICollectionView+Dequeueing.swift */,
+				639E986C2816AA5000907738 /* String+TextSize.swift */,
+				634A15D8283E316B00C6D543 /* UIView+Shimmering.swift */,
+			);
+			path = "UI Helpers";
+			sourceTree = "<group>";
+		};
+		63B051B7283A09D2000BACC3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63B051B8283A09EF000BACC3 /* UIRefreshControl+TestHelpers.swift */,
+				63277E632839FC9E0073B9FB /* UIControl+TestHelpers.swift */,
+				634A1610283FAAFF00C6D543 /* UIImage+make.swift */,
+				634A1613283FAB7D00C6D543 /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		639E983A28169C7F00907738 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639E984D28169C7F00907738 /* MeBoxiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		639E983E28169C7F00907738 /* MeBoxiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 639E984E28169C7F00907738 /* Build configuration list for PBXNativeTarget "MeBoxiOS" */;
+			buildPhases = (
+				639E983A28169C7F00907738 /* Headers */,
+				639E983B28169C7F00907738 /* Sources */,
+				639E983C28169C7F00907738 /* Frameworks */,
+				639E983D28169C7F00907738 /* Resources */,
+				639E985B28169FD400907738 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeBoxiOS;
+			productName = MeBoxiOS;
+			productReference = 639E983F28169C7F00907738 /* MeBoxiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		639E984528169C7F00907738 /* MeBoxiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 639E985128169C7F00907738 /* Build configuration list for PBXNativeTarget "MeBoxiOSTests" */;
+			buildPhases = (
+				639E984228169C7F00907738 /* Sources */,
+				639E984328169C7F00907738 /* Frameworks */,
+				639E984428169C7F00907738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				639E984928169C7F00907738 /* PBXTargetDependency */,
+			);
+			name = MeBoxiOSTests;
+			productName = MeBoxiOSTests;
+			productReference = 639E984628169C7F00907738 /* MeBoxiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		639E988E28178B4500907738 /* MeBoxApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 639E98A028178B4700907738 /* Build configuration list for PBXNativeTarget "MeBoxApp" */;
+			buildPhases = (
+				639E988B28178B4500907738 /* Sources */,
+				639E988C28178B4500907738 /* Frameworks */,
+				639E988D28178B4500907738 /* Resources */,
+				639E98AB28178D7100907738 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				639E98AA28178D7100907738 /* PBXTargetDependency */,
+			);
+			name = MeBoxApp;
+			productName = MeBoxApp;
+			productReference = 639E988F28178B4500907738 /* MeBoxApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		639E97EB28166C7300907738 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					639E983E28169C7F00907738 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+					639E984528169C7F00907738 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+					639E988E28178B4500907738 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 639E97EE28166C7300907738 /* Build configuration list for PBXProject "MeBox" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 639E97EA28166C7300907738;
+			productRefGroup = 639E97F528166C7300907738 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				639E983E28169C7F00907738 /* MeBoxiOS */,
+				639E984528169C7F00907738 /* MeBoxiOSTests */,
+				639E988E28178B4500907738 /* MeBoxApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		639E983D28169C7F00907738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639E984428169C7F00907738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639E988D28178B4500907738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639E989E28178B4700907738 /* LaunchScreen.storyboard in Resources */,
+				639E989B28178B4700907738 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		639E983B28169C7F00907738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639E987B2816AA5000907738 /* UITableView+Dequeueing.swift in Sources */,
+				639E98792816AA5000907738 /* UIView+ImageNamed.swift in Sources */,
+				639E987C2816AA5000907738 /* String+TextSize.swift in Sources */,
+				634A1606283F762E00C6D543 /* MyFeedViewController.swift in Sources */,
+				634A1601283F5EF100C6D543 /* MyFeedLoader.swift in Sources */,
+				634A15D9283E316B00C6D543 /* UIView+Shimmering.swift in Sources */,
+				634A1604283F6AE600C6D543 /* MyImageDataLoader.swift in Sources */,
+				634A1608283F76A300C6D543 /* MyFeedItemCell.swift in Sources */,
+				639E987A2816AA5000907738 /* UIColor+Extension.swift in Sources */,
+				63730951282173F100FA2D22 /* UICollectionView+Dequeueing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639E984228169C7F00907738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63277E642839FC9E0073B9FB /* UIControl+TestHelpers.swift in Sources */,
+				634A15FE283F5EB400C6D543 /* MyFeedUITests.swift in Sources */,
+				634A1611283FAAFF00C6D543 /* UIImage+make.swift in Sources */,
+				63B051B9283A09F0000BACC3 /* UIRefreshControl+TestHelpers.swift in Sources */,
+				634A160E283F85F500C6D543 /* MyFeedTestHelpers.swift in Sources */,
+				634A1614283FAB7D00C6D543 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639E988B28178B4500907738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639E989628178B4500907738 /* RouterViewController.swift in Sources */,
+				639E989228178B4500907738 /* AppDelegate.swift in Sources */,
+				634A1612283FAB2500C6D543 /* UIImage+make.swift in Sources */,
+				634A160C283F85DB00C6D543 /* MyFeedStubs.swift in Sources */,
+				634A160F283F861F00C6D543 /* MyFeedTestHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		639E984928169C7F00907738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 639E983E28169C7F00907738 /* MeBoxiOS */;
+			targetProxy = 639E984828169C7F00907738 /* PBXContainerItemProxy */;
+		};
+		639E98AA28178D7100907738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 639E983E28169C7F00907738 /* MeBoxiOS */;
+			targetProxy = 639E98A928178D7100907738 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		639E989C28178B4700907738 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				639E989D28178B4700907738 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		639E980428166C7300907738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		639E980528166C7300907738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		639E984F28169C7F00907738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8FGB267UHN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.etsme.MeBoxiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		639E985028169C7F00907738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8FGB267UHN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.etsme.MeBoxiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		639E985228169C7F00907738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FGB267UHN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.etsme.MeBoxiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		639E985328169C7F00907738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FGB267UHN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.etsme.MeBoxiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		639E98A128178B4700907738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FGB267UHN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeBoxApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.etsme.MeBoxApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		639E98A228178B4700907738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FGB267UHN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeBoxApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.etsme.MeBoxApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		639E97EE28166C7300907738 /* Build configuration list for PBXProject "MeBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				639E980428166C7300907738 /* Debug */,
+				639E980528166C7300907738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		639E984E28169C7F00907738 /* Build configuration list for PBXNativeTarget "MeBoxiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				639E984F28169C7F00907738 /* Debug */,
+				639E985028169C7F00907738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		639E985128169C7F00907738 /* Build configuration list for PBXNativeTarget "MeBoxiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				639E985228169C7F00907738 /* Debug */,
+				639E985328169C7F00907738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		639E98A028178B4700907738 /* Build configuration list for PBXNativeTarget "MeBoxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				639E98A128178B4700907738 /* Debug */,
+				639E98A228178B4700907738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 639E97EB28166C7300907738 /* Project object */;
+}
