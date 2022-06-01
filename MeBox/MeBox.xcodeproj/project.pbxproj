@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		63277E642839FC9E0073B9FB /* UIControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63277E632839FC9E0073B9FB /* UIControl+TestHelpers.swift */; };
-		634A15D9283E316B00C6D543 /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A15D8283E316B00C6D543 /* UIView+Shimmering.swift */; };
 		634A15FE283F5EB400C6D543 /* MyFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A15FD283F5EB400C6D543 /* MyFeedUITests.swift */; };
 		634A1601283F5EF100C6D543 /* MyFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1600283F5EF100C6D543 /* MyFeedLoader.swift */; };
 		634A1604283F6AE600C6D543 /* MyImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1603283F6AE600C6D543 /* MyImageDataLoader.swift */; };
@@ -20,6 +19,8 @@
 		634A1611283FAAFF00C6D543 /* UIImage+make.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1610283FAAFF00C6D543 /* UIImage+make.swift */; };
 		634A1612283FAB2500C6D543 /* UIImage+make.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1610283FAAFF00C6D543 /* UIImage+make.swift */; };
 		634A1614283FAB7D00C6D543 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1613283FAB7D00C6D543 /* XCTestCase+MemoryLeakTracking.swift */; };
+		6358DC0C2847165B00A144A4 /* MySmallMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6358DC0B2847165B00A144A4 /* MySmallMediaCell.swift */; };
+		6358DC0E284716C400A144A4 /* ShimmeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6358DC0D284716C400A144A4 /* ShimmeringView.swift */; };
 		63730951282173F100FA2D22 /* UICollectionView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63730950282173F100FA2D22 /* UICollectionView+Dequeueing.swift */; };
 		639E984728169C7F00907738 /* MeBoxiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639E983F28169C7F00907738 /* MeBoxiOS.framework */; };
 		639E984D28169C7F00907738 /* MeBoxiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 639E984128169C7F00907738 /* MeBoxiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,7 +80,6 @@
 
 /* Begin PBXFileReference section */
 		63277E632839FC9E0073B9FB /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
-		634A15D8283E316B00C6D543 /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
 		634A15FD283F5EB400C6D543 /* MyFeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedUITests.swift; sourceTree = "<group>"; };
 		634A1600283F5EF100C6D543 /* MyFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedLoader.swift; sourceTree = "<group>"; };
 		634A1603283F6AE600C6D543 /* MyImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageDataLoader.swift; sourceTree = "<group>"; };
@@ -89,6 +89,8 @@
 		634A160D283F85F500C6D543 /* MyFeedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedTestHelpers.swift; sourceTree = "<group>"; };
 		634A1610283FAAFF00C6D543 /* UIImage+make.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+make.swift"; sourceTree = "<group>"; };
 		634A1613283FAB7D00C6D543 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		6358DC0B2847165B00A144A4 /* MySmallMediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySmallMediaCell.swift; sourceTree = "<group>"; };
+		6358DC0D284716C400A144A4 /* ShimmeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmeringView.swift; sourceTree = "<group>"; };
 		63730950282173F100FA2D22 /* UICollectionView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeueing.swift"; sourceTree = "<group>"; };
 		639E983F28169C7F00907738 /* MeBoxiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeBoxiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		639E984128169C7F00907738 /* MeBoxiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeBoxiOS.h; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				634A1603283F6AE600C6D543 /* MyImageDataLoader.swift */,
 				634A1605283F762E00C6D543 /* MyFeedViewController.swift */,
 				634A1607283F76A300C6D543 /* MyFeedItemCell.swift */,
+				6358DC0B2847165B00A144A4 /* MySmallMediaCell.swift */,
 			);
 			path = MyFeed;
 			sourceTree = "<group>";
@@ -229,7 +232,7 @@
 				639E986B2816AA5000907738 /* UITableView+Dequeueing.swift */,
 				63730950282173F100FA2D22 /* UICollectionView+Dequeueing.swift */,
 				639E986C2816AA5000907738 /* String+TextSize.swift */,
-				634A15D8283E316B00C6D543 /* UIView+Shimmering.swift */,
+				6358DC0D284716C400A144A4 /* ShimmeringView.swift */,
 			);
 			path = "UI Helpers";
 			sourceTree = "<group>";
@@ -390,11 +393,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				639E987B2816AA5000907738 /* UITableView+Dequeueing.swift in Sources */,
+				6358DC0E284716C400A144A4 /* ShimmeringView.swift in Sources */,
 				639E98792816AA5000907738 /* UIView+ImageNamed.swift in Sources */,
 				639E987C2816AA5000907738 /* String+TextSize.swift in Sources */,
 				634A1606283F762E00C6D543 /* MyFeedViewController.swift in Sources */,
 				634A1601283F5EF100C6D543 /* MyFeedLoader.swift in Sources */,
-				634A15D9283E316B00C6D543 /* UIView+Shimmering.swift in Sources */,
+				6358DC0C2847165B00A144A4 /* MySmallMediaCell.swift in Sources */,
 				634A1604283F6AE600C6D543 /* MyImageDataLoader.swift in Sources */,
 				634A1608283F76A300C6D543 /* MyFeedItemCell.swift in Sources */,
 				639E987A2816AA5000907738 /* UIColor+Extension.swift in Sources */,

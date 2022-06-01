@@ -1,13 +1,13 @@
 //
-//  UIView+Shimmering.swift
+//  ShimmeringView.swift
 //  MeBoxiOS
 //
-//  Created by Kanyan Zheng on 2022/5/25.
+//  Created by Kanyan Zheng on 2022/6/1.
 //
 
 import UIKit
 
-extension UIView {
+public class ShimmeringView: UIView {
     public var isShimmering: Bool {
         set {
             if newValue {
@@ -16,16 +16,24 @@ extension UIView {
                 stopShimmering()
             }
         }
-        
+     
         get {
             return layer.mask?.animation(forKey: shimmerAnimationKey) != nil
         }
     }
-    
+
     private var shimmerAnimationKey: String {
         return "shimmer"
     }
-    
+
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        if isShimmering {
+            stopShimmering()
+            startShimmering()
+        }
+    }
+
     private func startShimmering() {
         
         let white = UIColor.white.cgColor

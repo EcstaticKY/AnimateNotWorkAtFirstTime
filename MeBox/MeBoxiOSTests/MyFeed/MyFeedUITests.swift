@@ -123,6 +123,39 @@ class MyFeedUITests: XCTestCase {
         XCTAssertEqual(cell1?.isLoadingImageData, false)
     }
     
+    func test_getTableViewCell() {
+        let (sut, feedLoader, _) = makeSUT()
+        let item0 = uniqueMyFeedItem(0)
+        let item1 = uniqueMyFeedItem(1)
+        
+        sut.loadViewIfNeeded()
+        feedLoader.completeLoadingWith([item0, item1], at: 0)
+        
+//        sut.simulateItemCellVisible(at: 0)
+        let cell = sut.tableView.cellForRow(at: IndexPath(row: 0, section: 0))
+        // Can get table cell even the cell is not visible before calling `cellForRow` method
+        XCTAssertNotNil(cell)
+    }
+    
+    func test_getCollectionCellInTableViewCell() {
+        let (sut, feedLoader, _) = makeSUT()
+        let item0 = uniqueMyFeedItem(0)
+        let item1 = uniqueMyFeedItem(1)
+        
+        sut.loadViewIfNeeded()
+        feedLoader.completeLoadingWith([item0, item1], at: 0)
+        
+        let itemCell = (sut.simulateItemCellVisible(at: 0))!
+        
+        // Make the collection cell visible
+        let ds = itemCell.collectionView.dataSource
+        let cell = ds?.collectionView(itemCell.collectionView, cellForItemAt: IndexPath(row: 0, section: 0))
+        XCTAssertNotNil(cell)
+        
+        let collectionCell = itemCell.collectionView.cellForItem(at: IndexPath(row: 0, section: 0))
+        XCTAssertNotNil(collectionCell, "Expected can get collection cell after making the collection cell visible")
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> (MyFeedViewController, FeedLoaderSpy, ImageLoaderSpy) {

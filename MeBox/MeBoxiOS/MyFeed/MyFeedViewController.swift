@@ -26,7 +26,7 @@ public class MyFeedViewController: UITableViewController {
         refreshControl = UIRefreshControl()
         refreshControl?.addTarget(self, action: #selector(loadFeed), for: .valueChanged)
         
-        tableView.rowHeight = 100
+        tableView.rowHeight = 200
         tableView.backgroundColor = .white
         tableView.register(MyFeedItemCell.self, forCellReuseIdentifier: String(describing: MyFeedItemCell.self))
         
