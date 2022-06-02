@@ -137,20 +137,23 @@ class MyFeedUITests: XCTestCase {
         XCTAssertNotNil(cell)
     }
     
-    func test_getCollectionCellInTableViewCell() {
+    func test_getCollectionCellInTableViewCell() throws {
         let (sut, feedLoader, _) = makeSUT()
         let item0 = uniqueMyFeedItem(0)
         let item1 = uniqueMyFeedItem(1)
         
-        sut.loadViewIfNeeded()
+        // set a frame that's enough to render the cells on screen
+        sut.view.frame = CGRect(x: 0, y: 0, width: 475, height: 900)
+        // also, since we're accessing the sut.view for the first time here, it'll also call viewDidLoad automatically so we don't need to call `loadViewIfNeeded()` in this test
+        
+        // complete the request with the models to render the cell on screen
         feedLoader.completeLoadingWith([item0, item1], at: 0)
         
-        let itemCell = (sut.simulateItemCellVisible(at: 0))!
+        // force the view to layout itself (which should render the cells too)
+        sut.view.layoutIfNeeded()
         
-        // Make the collection cell visible
-        let ds = itemCell.collectionView.dataSource
-        let cell = ds?.collectionView(itemCell.collectionView, cellForItemAt: IndexPath(row: 0, section: 0))
-        XCTAssertNotNil(cell)
+        // now that cells should be rendered, you can get the cells at index path directly through the tableview/collection view APIs (not through the data source)
+        let itemCell = try XCTUnwrap(sut.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? MyFeedItemCell)
         
         let collectionCell = itemCell.collectionView.cellForItem(at: IndexPath(row: 0, section: 0))
         XCTAssertNotNil(collectionCell, "Expected can get collection cell after making the collection cell visible")
