@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		63277E642839FC9E0073B9FB /* UIControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63277E632839FC9E0073B9FB /* UIControl+TestHelpers.swift */; };
+		6332E6862851FCA700B0465A /* MyPoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332E6852851FCA700B0465A /* MyPoolTests.swift */; };
 		634A15FE283F5EB400C6D543 /* MyFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A15FD283F5EB400C6D543 /* MyFeedUITests.swift */; };
 		634A1601283F5EF100C6D543 /* MyFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1600283F5EF100C6D543 /* MyFeedLoader.swift */; };
 		634A1604283F6AE600C6D543 /* MyImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A1603283F6AE600C6D543 /* MyImageDataLoader.swift */; };
@@ -80,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		63277E632839FC9E0073B9FB /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
+		6332E6852851FCA700B0465A /* MyPoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPoolTests.swift; sourceTree = "<group>"; };
 		634A15FD283F5EB400C6D543 /* MyFeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedUITests.swift; sourceTree = "<group>"; };
 		634A1600283F5EF100C6D543 /* MyFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedLoader.swift; sourceTree = "<group>"; };
 		634A1603283F6AE600C6D543 /* MyImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageDataLoader.swift; sourceTree = "<group>"; };
@@ -135,6 +137,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6332E6842851FC4D00B0465A /* Asynchronous */ = {
+			isa = PBXGroup;
+			children = (
+				6332E6852851FCA700B0465A /* MyPoolTests.swift */,
+			);
+			path = Asynchronous;
+			sourceTree = "<group>";
+		};
 		634A15FC283F5EA200C6D543 /* MyFeed */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +208,7 @@
 		639E984A28169C7F00907738 /* MeBoxiOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				6332E6842851FC4D00B0465A /* Asynchronous */,
 				634A15FC283F5EA200C6D543 /* MyFeed */,
 				63B051B7283A09D2000BACC3 /* Helpers */,
 			);
@@ -411,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63277E642839FC9E0073B9FB /* UIControl+TestHelpers.swift in Sources */,
+				6332E6862851FCA700B0465A /* MyPoolTests.swift in Sources */,
 				634A15FE283F5EB400C6D543 /* MyFeedUITests.swift in Sources */,
 				634A1611283FAAFF00C6D543 /* UIImage+make.swift in Sources */,
 				63B051B9283A09F0000BACC3 /* UIRefreshControl+TestHelpers.swift in Sources */,
