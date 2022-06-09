@@ -33,7 +33,7 @@
 		639E989B28178B4700907738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639E989A28178B4700907738 /* Assets.xcassets */; };
 		639E989E28178B4700907738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639E989C28178B4700907738 /* LaunchScreen.storyboard */; };
 		639E98A728178D7100907738 /* MeBoxiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639E983F28169C7F00907738 /* MeBoxiOS.framework */; };
-		639E98A828178D7100907738 /* MeBoxiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639E983F28169C7F00907738 /* MeBoxiOS.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		639E98A828178D7100907738 /* MeBoxiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 639E983F28169C7F00907738 /* MeBoxiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63B051B9283A09F0000BACC3 /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B051B8283A09EF000BACC3 /* UIRefreshControl+TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
@@ -326,7 +326,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					639E983E28169C7F00907738 = {
 						CreatedOnToolsVersion = 13.2.1;

@@ -8,7 +8,6 @@
 import UIKit
 import XCTest
 import MeBoxiOS
-import MeBox
 
 class MyFeedUITests: XCTestCase {
     func test_userIniatedReload_loadFeedFromLoader() {
