@@ -23,6 +23,7 @@
 		6358DC0C2847165B00A144A4 /* MySmallMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6358DC0B2847165B00A144A4 /* MySmallMediaCell.swift */; };
 		6358DC0E284716C400A144A4 /* ShimmeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6358DC0D284716C400A144A4 /* ShimmeringView.swift */; };
 		63730951282173F100FA2D22 /* UICollectionView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63730950282173F100FA2D22 /* UICollectionView+Dequeueing.swift */; };
+		6380007728BA20C100CA715E /* LoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6380007628BA20C100CA715E /* LoaderTests.swift */; };
 		639E984728169C7F00907738 /* MeBoxiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639E983F28169C7F00907738 /* MeBoxiOS.framework */; };
 		639E984D28169C7F00907738 /* MeBoxiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 639E984128169C7F00907738 /* MeBoxiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		639E98792816AA5000907738 /* UIView+ImageNamed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E98692816AA5000907738 /* UIView+ImageNamed.swift */; };
@@ -94,6 +95,7 @@
 		6358DC0B2847165B00A144A4 /* MySmallMediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySmallMediaCell.swift; sourceTree = "<group>"; };
 		6358DC0D284716C400A144A4 /* ShimmeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmeringView.swift; sourceTree = "<group>"; };
 		63730950282173F100FA2D22 /* UICollectionView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeueing.swift"; sourceTree = "<group>"; };
+		6380007628BA20C100CA715E /* LoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderTests.swift; sourceTree = "<group>"; };
 		639E983F28169C7F00907738 /* MeBoxiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeBoxiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		639E984128169C7F00907738 /* MeBoxiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeBoxiOS.h; sourceTree = "<group>"; };
 		639E984628169C7F00907738 /* MeBoxiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeBoxiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +213,7 @@
 				6332E6842851FC4D00B0465A /* Asynchronous */,
 				634A15FC283F5EA200C6D543 /* MyFeed */,
 				63B051B7283A09D2000BACC3 /* Helpers */,
+				6380007628BA20C100CA715E /* LoaderTests.swift */,
 			);
 			path = MeBoxiOSTests;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				634A1611283FAAFF00C6D543 /* UIImage+make.swift in Sources */,
 				63B051B9283A09F0000BACC3 /* UIRefreshControl+TestHelpers.swift in Sources */,
 				634A160E283F85F500C6D543 /* MyFeedTestHelpers.swift in Sources */,
+				6380007728BA20C100CA715E /* LoaderTests.swift in Sources */,
 				634A1614283FAB7D00C6D543 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
